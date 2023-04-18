@@ -1,0 +1,73 @@
+nav.navbar-responsive {
+
+    background-color: var(--primary);
+    --color: var(--primary-inverse);
+    padding: 1rem var(--spacing);
+
+
+
+  }
+  nav.navbar-responsive a {
+    --color: var(--primary-inverse);
+    --font-size: 1.5em;
+    position: relative;
+     display: flex;
+     justify-content: flex-end;
+     padding: .25rem var(--spacing);
+  }
+  nav.navbar-responsive > h1 {
+    --font-size: 2em;
+    --h1-color: var(--primary-inverse);
+    margin-right: 2rem;
+    margin-bottom: 0;
+    padding: .5rem 1rem;
+    background-color: var(--primary);
+
+  }
+  nav.navbar-responsive img {
+    --color: var(--primary-inverse);
+    --font-size: 1.5em;
+    position: relative;
+     display: flex;
+     justify-content: flex-end;
+     padding: .2rem var(--spacing);
+     max-width: none;
+    height: auto;
+    border-style:
+}
+@media screen and (768px <width < 992px) {
+    nav.navbar-responsive > h1 {
+        --font-size: 1em;
+    }
+  }
+
+
+  @media screen and (width < 768px) {
+    nav.navbar-responsive > ul {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin-top: 0;
+        margin-bottom: 0;
+        --font-size: 0.8em;
+
+
+    }
+  }
+  @media screen and (width < 768px) {
+    nav.navbar-responsive > h1 {
+        --font-size: 0.69em;
+        padding-top: 20px;
+    }
+  }
+  @media screen and (width < 768px) {
+    nav.navbar-responsive > ul >a {
+        display: block;
+        --font-size: 0.8em;
+        padding: 1.5em 0em 0em 1.5em;
+
+
+    }
+  }
+
+
