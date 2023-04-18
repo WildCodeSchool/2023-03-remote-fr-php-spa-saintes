@@ -1,0 +1,14 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+	<main class="container">
+		<h1>Accueil</h1>
+		<ul>
+			{% for welcome in welcomes %}
+				<li>{welcome.title }}
+				</li>
+			{% endfor %}
+		</ul>
+	</main>
+{% endblock %}
+
