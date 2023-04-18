@@ -2,7 +2,7 @@ nav.navbar-responsive {
 
     background-color: var(--primary);
     --color: var(--primary-inverse);
-    padding: 1rem var(--spacing);
+    padding: .5rem;
 
 
 
