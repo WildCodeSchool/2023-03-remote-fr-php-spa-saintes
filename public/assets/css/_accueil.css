@@ -1,0 +1,35 @@
+section.accueil-container {
+    display: grid;
+    gap: calc(var(--spacing));
+
+
+}
+section.accueil-container > article {
+    background-color: var(--primary);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+
+section.accueil-container h2, p {
+    --color: var(--primary-inverse);
+    display: flex;
+    justify-content: center;
+
+
+}
+
+section.accueil-container a{
+
+    display: flex;
+    justify-content: flex-end;
+
+}
+section.accueil-container img{
+    width: 40%;
+    height: auto;
+}
+
