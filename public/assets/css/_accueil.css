@@ -53,9 +53,10 @@ section.accueil-container a {
 }
 
 .box_c img {
-    width: 40%;
-    height: 100%;
-    float: right;
+    width: auto;
+    height: inherit;
+    float: inherit;
+    object-fit: contain;
 }
 
 @media screen and (width > 991px) {
