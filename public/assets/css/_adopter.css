@@ -9,14 +9,20 @@ section.adopte-container  article{
     background-color: var(--primary);
 
 }
-section.adopte-container h1, h2, p, h3 {
+
+section.adopte-container h1,
+section.adopte-container h2,
+section.adopte-container p,
+section.adopte-container h3 {
     --color: var(--primary-inverse);
     display: grid;
     float: unset;
     padding-left: 10px;
     padding-right: 10px;
 
+
 }
+
 section.adopte-container h1, h2, h3{
     text-align: center;
 }
