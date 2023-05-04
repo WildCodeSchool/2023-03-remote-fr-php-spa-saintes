@@ -9,6 +9,8 @@
 return [
     '' => ['HomeController', 'index',],
     'adopter' => ['AdopterController', 'index',],
+    'adoptdog' => ['AdoptdogController', 'index',],
+    'adoptcat' => ['AdoptcatController', 'index',],
     'items' => ['ItemController', 'index',],
     'items/edit' => ['ItemController', 'edit', ['id']],
     'items/show' => ['ItemController', 'show', ['id']],
