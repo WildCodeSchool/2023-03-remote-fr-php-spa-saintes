@@ -7,14 +7,9 @@
 -- Version du serveur :  5.7.19-0ubuntu0.16.04.1
 -- Version de PHP :  7.0.22-0ubuntu0.16.04.1
 
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET time_zone = "+00:00";
 
 
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
+
 
 --
 -- Base de données :  `simple-mvc`
@@ -25,7 +20,7 @@ SET time_zone = "+00:00";
 -- Structure de la table 'race'
 --
 
-CREATE TABLE IF NOT EXISTS 'race'(
+CREATE TABLE IF NOT EXISTS `race` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `race` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`id`))
@@ -36,7 +31,7 @@ ENGINE = InnoDB
 -- Contenu de la table 'race'
 --
 
-INSERT INTO 'race' (`id`, `race`)VALUES
+INSERT INTO `race` (`id`, `race`) VALUES
 (1, 'Labrador'),
 (2, 'Berger'),
 (3, 'Husky_Labrador'),
