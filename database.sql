@@ -24,17 +24,13 @@ CREATE TABLE IF NOT EXISTS `race` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `race` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`id`))
-ENGINE = InnoDB
+ENGINE = InnoDB;
 
-
---
--- Contenu de la table 'race'
---
 
 INSERT INTO `race` (`id`, `race`) VALUES
 (1, 'Labrador'),
 (2, 'Berger'),
-(3, 'Husky_Labrador'),
+(3, 'Husky Labrador'),
 (4, 'Staff');
 -- --------------------------------------------------------
 --
@@ -57,19 +53,19 @@ CREATE TABLE IF NOT EXISTS `pet`(
     REFERENCES `race` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
-ENGINE = InnoDB
+ENGINE = InnoDB;
 
 
 --
 -- Contenu de la table 'Pet'
 --
 
-INSERT INTO `Pet` (`id`, `name`, `birth_date`,`is_dog`, `is_cat` , `description`, `picture`, `race_id`) VALUES
+INSERT INTO `pet` (`id`, `name`, `birth_date`,`is_dog`, `is_cat` , `description`, `picture`, `race_id`) VALUES
 (1, 'Diesel', '2011:01:07', 1, 0, 'A besoin de présence et il lui faut un jardin clos.', 'Diesel.jpg', 3),
 (2, 'Buzz', '2022:04:12', 1, 0, 'Trouvé dans la rue.<br>Adorable, demande de l''affection.<br>
 PAS OK CHIENS;<br> PAS OK CHATS<br> OK ENFANTS<br>
-A besoin d'`être éduqué.
-Il lui faut un jardin clos.', 'Buzz.jpg', 1)
+A besoin d''être éduqué.
+Il lui faut un jardin clos.', 'Buzz.jpg', 1),
 (3, 'Pepite', '2019:05:19', 1, 0, 'Chien de catégorie.<br>Il faut un permis.<br>
 Adoption sous réserve
 d''être en règle :
