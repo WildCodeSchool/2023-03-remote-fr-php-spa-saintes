@@ -2,6 +2,8 @@
 
 namespace App\Controller;
 
+use App\Model\AdoptDogManager;
+
 class AdoptdogController extends AbstractController
 {
     /**
@@ -9,6 +11,11 @@ class AdoptdogController extends AbstractController
      */
     public function index(): string
     {
-        return $this->twig->render('Adoptdog/index.html.twig');
+        $adoptDogManager = new AdoptDogManager();
+        $dogs = $adoptDogManager->selectAll('name');
+
+        return $this->twig->render('Adoptdog/index.html.twig', [
+            'dogs' => $dogs
+        ]);
     }
 }

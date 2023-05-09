@@ -1,0 +1,41 @@
+.adopter-chien {
+    text-align: center;
+    margin-bottom: 0;
+}
+.adopt-dog {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+}
+.adopt-dog h2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.adopt-dog article {
+    padding: 1rem;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.adopt-dog article div p {
+    font-size: 1rem;
+    --color : var(--primary);
+    padding-top: .5rem;
+}
+.adopt-dog article div img {
+    width: 15rem;
+}
+
+@media only screen and (max-width: 1000px) {
+    .adopt-dog {
+        grid-template-columns: repeat(2, 2fr);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .adopt-dog {
+        display: flex;
+        flex-direction: column;
+    }
+}

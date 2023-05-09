@@ -1,5 +1,23 @@
 {% extends 'layout.html.twig' %}
 
 {% block content %}
-<h1> Adopter un chien<h1>
-{% endblock %}
+	<h1 class="adopter-chien">
+		Adopter un chien<h1>
+			<section class="adopt-dog">
+
+				{% for dog in dogs  %}
+					<article>
+						<h2>{{dog.name}}</h2>
+						<div>
+							<img src="/assets/images/{{ dog.picture }}" alt="Image de {{ dog.name }}">
+                            <p>
+							{{dog.description|raw }}
+						</p>
+						</div>
+						
+
+
+					</article>
+				{% endfor %}
+			</section>
+		{% endblock %}
